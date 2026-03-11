@@ -1,12 +1,10 @@
 ﻿namespace API.Models
 {
-    public class Category
+    public class Purchase
     {
         public int Id { get; set; }
-        /// <summary>
-        /// nome da categoria
-        /// </summary>
-        public string Name { get; set; }
+        public DateTime Date { get; set; } 
+        public State State { get; set; }
         public ICollection<Photography> ListOfPhotos { get; set; }
     }
 }
